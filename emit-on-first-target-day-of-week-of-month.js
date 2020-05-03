@@ -57,6 +57,7 @@ module.exports = {
   async run() {
     const currentDay = new Date().getDay(); // In UTC
 
+    console.log(typeof this.targetDayOfWeek);
     if (currentDay === parseInt(this.targetDayOfWeek)) {
       this.$emit(
         {
